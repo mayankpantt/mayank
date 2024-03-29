@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Website</title>
+<style>
+    /* Your existing CSS styles */
+    /* Resetting default margin and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Global Styles */
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-image: linear-gradient(67.5deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(90deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(135deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(0deg, rgb(6, 6, 6) 0%, rgb(6, 6, 6) 6%,rgb(29, 29, 29) 6%, rgb(29, 29, 29) 57%,rgb(52, 52, 52) 57%, rgb(52, 52, 52) 58%,rgb(75, 75, 75) 58%, rgb(75, 75, 75) 79%,rgb(97, 97, 97) 79%, rgb(97, 97, 97) 93%,rgb(120, 120, 120) 93%, rgb(120, 120, 120) 95%,rgb(143, 143, 143) 95%, rgb(143, 143, 143) 100%),linear-gradient(90deg, rgb(8, 8, 8),rgb(221, 221, 221)); background-blend-mode:overlay,overlay,overlay,overlay,normal;
+    }
+
+    /* Header Styles */
+    header {
+        background-color: #333;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+        font-family: cursive;
+    }
+
+    /* Navigation Styles */
+    nav {
+        background-color: #444;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    /* Hero Section Styles */
+    #hero {
+        background-image: radial-gradient(circle at center center, transparent, rgb(0, 0, 0)), linear-gradient(620deg, rgba(198, 198, 198, 0.05) 0%, rgba(198, 198, 198, 0.05) 50%, rgba(11, 11, 11, 0.05) 50%, rgba(11, 11, 11, 0.05) 100%), linear-gradient(384deg, rgba(54, 54, 54, 0.05) 0%, rgba(54, 54, 54, 0.05) 50%, rgba(132, 132, 132, 0.05) 50%, rgba(132, 132, 132, 0.05) 100%), linear-gradient(337deg, rgba(57, 57, 57, 0.05) 0%, rgba(57, 57, 57, 0.05) 50%, rgba(128, 128, 128, 0.05) 50%, rgba(128, 128, 128, 0.05) 100%), linear-gradient(652deg, rgba(97, 97, 97, 0.05) 0%, rgba(97, 97, 97, 0.05) 50%, rgba(85, 85, 85, 0.05) 50%, rgba(85, 85, 85, 0.05) 100%), linear-gradient(468deg, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 50%, rgba(211, 211, 211, 0.05) 50%, rgba(211, 211, 211, 0.05) 100%), linear-gradient(462deg, rgba(168, 168, 168, 0.05) 0%, rgba(168, 168, 168, 0.05) 50%, rgba(32, 32, 32, 0.05) 50%, rgba(32, 32, 32, 0.05) 100%), linear-gradient(335deg, rgba(225, 225, 225, 0.05) 0%, rgba(225, 225, 225, 0.05) 50%, rgba(228, 228, 228, 0.05) 50%, rgba(228, 228, 228, 0.05) 100%), linear-gradient(325deg, rgba(104, 104, 104, 0.05) 0%, rgba(104, 104, 104, 0.05) 50%, rgba(43, 43, 43, 0.05) 50%, rgba(43, 43, 43, 0.05) 100%), radial-gradient(circle at center center, hsl(290, 5%, 8%), hsl(290, 5%, 8%));
+        background-size: cover;
+        background-position: center;
+        padding: 60px 0;
+        text-align: center;
+        color: #fff;
+    }
+    
+
+    #hero .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    #hero h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    #hero p {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    #hero .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+    #hero .btn:hover {
+        background-color: #555;
+    }
+
+    /* About Section Styles */
+    .about {
+        background-color: #ddd;
+        padding: 20px;
+      text-align: center;
+    }
+
+    .about h2{
+        font-size: 30px;
+    }
+
+    /* Projects Section Styles */
+    .projects {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .projects h2{
+        font-size: 30px;
+    }
+
+    /* Check Out Reviews */
+    .Check {
+        background-color: #34495E  ;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .check h2{
+        font-size: 30px;
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Contact Form Styles */
+    .contact-form {
+        background-color: #ddd;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    /* Form Styles */
+    form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    input[type="reset"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .review {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    input[type="review"] {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    /* Modal Styles */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+    /* Close Button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1><u>Literary Lens</u></h1>
+        <p></p>
+    </header>
+    
+    <nav>
+        <a href="#" onclick="showContact()">Contact</a>
+    </nav>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome to my Website</h1>
+            <u><p> Discover the fascinating world of book reviews </p></u>
+            <a href="#" class="btn" onclick="openForm()">Post a Book Review</a>
+        </div>
+    </section>
+
+    <div class="about">
+        <h2><u><b>About</b></u></h2>
+        <!-- Add About Section Content Here -->
+        At Literary Lens, I'm passionate about literature and the power of storytelling. My aim is to create a website where I can post reviews of all the books that I read.
+        Join me as I embark on a literary adventure together. Welcome to Literary Lens, where the love of books knows no bounds.
+    </div>
+
+    <div class="projects">
+        <h2><u><b>Project</b></u></h2>
+        <!-- Add Projects Section Content Here -->
+        As part of my academic journey, I am excited to present this website as my minor project. Designed and developed by Mayank Pant(CSE-21), this project represents my dedication to learning and applying web development skills in a practical setting. Through this project, I aimed to showcase my ability to create a functional and aesthetically pleasing website while exploring the fascinating world of book reviews.
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <form enctype="multipart/form-data" action="https://formbold.com/s/94xGX" method="POST" class="mx-auto w-full max-w-[570px] rounded-[10px] border border-stroke bg-white p-10 themeOne">
+                <h3 class="static !font-bold text-xl font-semibold leading-tight text-black sm:text-[28px]">
+                    <u><b>Review Form</b></u>
+                </h3><br>
+                <label> <b>Name:</b> </label>
+                <input type="text" name="name" size="15" placeholder="Enter your Name"/> <br> <br>
+                <label><b>Email:</b></label>
+                <input type="email" id="email" name="email" placeholder="Enter E-mail"> <br>
+                <br>
+                <label><b>Goodreads Username:</b></label>
+                <input type="text" name ="goodreadsusername" placeholder="Enter your Username"> <br> <br>
+                <label><b>Book Name:</b></label>
+                <input type="text" name="bookname" placeholder="Enter the Book Name"> <br> <br>
+                <label><b>Author:</b></label>
+                <input type="text" name="authorname" placeholder="Enter the Author Name"> <br> <br>
+                <label><b>Review:</b></label>
+                <br>
+                <textarea id="review" name="review" cols="100" rows="5" placeholder="Write the Review"></textarea>
+                <br> <br>
+                <label><b>Upload the Book:</b></label><br>
+                <input type="file" name="book" placeholder="File" name="file">
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+        function showContact() {
+            var contactInfo = "Name: Mayank Pant\nE-mail: pantmohit2002@gmail.com\nPhone Number: 7465090390";
+            alert(contactInfo);
+        }
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementsByClassName("btn")[0];
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        function openForm() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        function closeForm() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
